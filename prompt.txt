@@ -1,0 +1,112 @@
+PROMPT 1:
+Write a menu driven program for a 2d graphics editor in C using * and _.
+1. Write functions to draw objects: circle, rectangle, line, and triangle.
+2. You should be able to add objects to the picture, delete objects from the picture.
+3. Use a 2d array of characters to store the picture.
+4. Write a function to display the picture.
+
+RESPONSE 1:
+I created a complete C program for a 2D graphics editor with functions for circle, rectangle, line, triangle, add/delete objects, and display picture using a 2D character array.
+
+---
+
+PROMPT 2:
+How to create a folder through powershell, it should be named as graphics_editor and file should be main.c
+
+RESPONSE 2:
+mkdir graphics_editor
+cd graphics_editor
+New-Item main.c
+code .
+
+---
+
+PROMPT 3:
+I have pasted the code now say me what to do next
+
+RESPONSE 3:
+Step 1: cd graphics_editor
+Step 2: gcc main.c -o graphics_editor
+Step 3: ./graphics_editor
+
+---
+
+PROMPT 4:
+gcc is not recognized in PowerShell
+
+RESPONSE 4:
+$env:PATH += ";C:\msys64\ucrt64\bin"
+Then run: gcc main.c -o graphics_editor
+
+---
+
+PROMPT 5:
+How to create a GitHub repository and push code daily
+
+RESPONSE 5:
+1. Create repo on github.com
+2. git init
+3. git add .
+4. git commit -m "first commit"
+5. git remote add origin https://github.com/YOUR_USERNAME/graphics_editor.git
+6. git branch -M main
+7. git push -u origin main
+Daily: git add . → git commit -m "message" → git push
+
+---
+
+PROMPT 6:
+git is not recognized in PowerShell
+
+RESPONSE 6:
+winget install --id Git.Git -e --source winget
+Then close and reopen PowerShell and run git --version
+
+---
+
+PROMPT 7:
+fatal: unable to auto-detect email address
+
+RESPONSE 7:
+git config --global user.name "Sanjana"
+git config --global user.email "your_email@gmail.com"
+Then: git add . → git commit -m "first commit" → git push -u origin main
+
+---
+
+PROMPT 8:
+Give me Day 1 README content and what to push
+
+RESPONSE 8:
+Created README.md with project description, features, compile instructions, run instructions, and Day 1 progress. Then pushed using:
+git add .
+git commit -m "Day 1 - Added circle, rectangle, line, triangle with display"
+git push
+---
+PROMPT 9:
+Can I submit the assignment now?
+
+RESPONSE 9:
+Yes! Copy your GitHub repository link:
+https://github.com/sanjanarathod01102007-prog/graphics_editor
+And paste it in the Moodle online text field for the assignment and submit.
+Make sure main.c, README.md are visible and at least 1 commit is showing.
+
+---
+PROMPT 10:
+For the Mini Project, students may use any Generative AI tool of their choice.
+However, students must copy all the prompts used to interact with the GenAI tool,
+along with the corresponding responses, into a text file. File name should be prompt.txt.
+The prompt.txt file must be uploaded to the same Git repository.
+Give me list of what prompts I have used and the response you gave and say me
+how to create prompt.txt using notepad in powershell.
+
+RESPONSE 10:
+notepad prompt.txt
+Provided all prompts and responses from PROMPT 1 to PROMPT 8 in a text format
+to paste into Notepad and save as prompt.txt. Then pushed using:
+git add .
+git commit -m "Added prompt.txt with all AI interactions"
+git push
+
+---.
